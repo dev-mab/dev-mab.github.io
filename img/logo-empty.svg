@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="67.829712"
+   height="40.795296"
+   viewBox="0 0 67.829712 40.795296"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="logo-empty.svg"
+   style="fill:none"
+   inkscape:version="0.92.0 r15299">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="8.1624718"
+     inkscape:cx="29.445245"
+     inkscape:cy="15.222501"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <path
+     style="fill:#ffffff;stroke-width:1.29621613;paint-order:markers fill stroke"
+     d="M 22.941406,0.12109375 48.908203,40.672224 H 60.9375 c 3.997621,-1.32788 6.892035,-5.197817 6.892578,-9.770194 -0.0026,-5.601264 -4.350081,-10.164116 -9.769531,-10.257027 4.707434,-1.211966 8.005291,-5.510479 8.009765,-10.436387 -0.002,-4.5605442 -2.832088,-8.5476438 -6.951171,-10.08752225 z"
+     id="rect3950"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#cccccc;stroke-width:1.99391437;paint-order:markers fill stroke"
+     d="M 6.0590906,0.37112686 31.747538,40.648134 44.81989,40.690254 18.553185,0.23225505 Z"
+     id="rect3997"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
+  <circle
+     style="fill:#0066cc;stroke-width:1.26504707;paint-order:markers fill stroke"
+     id="path4003"
+     cx="10.163413"
+     cy="30.476072"
+     r="10.163413" />
+</svg>
