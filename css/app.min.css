@@ -4046,12 +4046,13 @@ body:not(.touch-device) .owl-item:hover .details__preview {
 .footer {
   position: relative;
   z-index: 2;
+  background: #00113B url("../img/content/bg-footer.png") no-repeat 100% 100%/100% auto; 
   color: #fff; }
   @media only screen and (max-width: 767px) {
     .footer {
       position: relative;
       padding: 56px 0 60px;
-      background: #00113B url("../img/content/bg-footer.png") no-repeat 100% 100%/100% auto; }
+      }
       .footer:before, .footer:after {
         content: "";
         position: absolute;
