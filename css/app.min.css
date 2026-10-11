@@ -4046,7 +4046,7 @@ body:not(.touch-device) .owl-item:hover .details__preview {
 .footer {
   position: relative;
   z-index: 2;
-  background: #00113B url("../img/content/bg-footer.png") no-repeat 100% 100%/100% auto; 
+  background: #00113B no-repeat 100% 100%/100% auto; 
   color: #fff; }
   @media only screen and (max-width: 767px) {
     .footer {
