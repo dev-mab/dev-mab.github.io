@@ -151,7 +151,7 @@
                   <form class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
                     <div class="contacts__field field">
                       <div class="field__wrap">
-                        <input class="field__input" type="text" name="name" placeholder="Name"/>
+                        <input class="field__input" type="text" name="fullName" placeholder="Name"/>
                         <div class="field__icon">
                           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" fill="none" viewBox="0 0 17 18">
                             <path fill-rule="evenodd" d="M8.5.875a4.5 4.5 0 0 0-4.5 4.5v2a4.5 4.5 0 1 0 9 0v-2a4.5 4.5 0 0 0-4.5-4.5zM6 5.375a2.5 2.5 0 1 1 5 0v2a2.5 2.5 0 1 1-5 0v-2zM3.547 12.25a1 1 0 0 0-.969-1.75A5 5 0 0 0 0 14.875v2a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1v-2a5 5 0 0 0-2.578-4.375 1 1 0 1 0-.969 1.75A3 3 0 0 1 15 14.875v1H2v-1a3 3 0 0 1 1.547-2.625z" fill="#111029"></path>
@@ -165,19 +165,6 @@
                         <div class="field__icon">
                           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 17 17">
                             <path fill-rule="evenodd" d="M16.707.668a1 1 0 0 1 .238 1.033l-5 14.5a1 1 0 0 1-1.853.093l-3-6.5a1 1 0 0 1 .201-1.126l3-3a1 1 0 0 1 1.414 1.414L9.2 9.589l1.665 3.608 3.52-10.208-10.207 3.52 2.223 1.026a1 1 0 1 1-.838 1.816L1.081 7.283a1 1 0 0 1 .093-1.853l14.5-5a1 1 0 0 1 1.033.238z" fill="#4c40f7"></path>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="contacts__field field">
-                      <div class="field__wrap">
-                        <select class="field__select" name="question">
-                          <option>What are you working on?</option>
-                          <option>What are your current projects?</option>
-                        </select>
-                        <div class="field__icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" fill="none" viewBox="0 0 12 18">
-                            <path fill-rule="evenodd" d="M6.664 1.128a1 1 0 0 0-1.329 0l-4.5 4a1 1 0 0 0 1.329 1.495L6 3.213l3.836 3.409a1 1 0 1 0 1.329-1.495l-4.5-4zm-4.5 11a1 1 0 1 0-1.329 1.495l4.5 4a1 1 0 0 0 1.329 0l4.5-4a1 1 0 0 0-1.329-1.495L6 15.537l-3.836-3.41z" fill="#111029"></path>
                           </svg>
                         </div>
                       </div>
@@ -223,7 +210,7 @@
                 <div class="footer__menu"><a class="footer__link" href="#">About Me</a></div>
               </div>
               <div class="footer__bottom">
-                <div class="footer__copyright">© 2022, MAB-Dev Pvt. Ltd.</div><a class="footer__scroll js-scroll" href="#header">Back to top</a>
+                <div class="footer__copyright">© 2026, MAB-Dev Pvt. Ltd.</div><a class="footer__scroll js-scroll" href="#header">Back to top</a>
               </div>
             </div>
             <div class="footer__bg">
@@ -240,5 +227,30 @@
     <script src="js/lib/aos.js"></script>
     <script src="js/lib/simpleParallax.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      const form = document.querySelector('form'); // Selects your custom form
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Stops the page from refreshing
+        
+        const formData = new FormData();
+        
+        // Replace the entry numbers below with the ones you copied from Google Forms
+        formData.append('entry.entry.1120138666', document.getElementById('fullName').value);
+        formData.append('entry.856313645', document.getElementById('email').value);
+        formData.append('entry.entry.1521862458', document.getElementById('message').value);
+      
+        // Replace this URL with your unique formResponse URL
+        fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSe9yo3R0vWAtnedrRRMhkV-bNSIpxsOV2_KRmX0SrMpQVrKjg/formResponse', {
+          method: 'POST',
+          mode: 'no-cors', // Crucial: prevents CORS blocking errors
+          body: formData
+        }).then(() => {
+          form.reset(); // Clears your website form fields
+        }).catch(err => {
+          console.error('Submission error:', err);
+        });
+      });
+    </script>
   </body>
 </html>
